@@ -1,5 +1,5 @@
 <template>
   <div>
-    auth playground page
+    <NuxtPage></NuxtPage>
   </div>
 </template>

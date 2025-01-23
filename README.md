@@ -17,7 +17,7 @@
 
 - blog extend auth， 而 auth 的 app.vue 会直接把 blog 的 / 路由覆盖掉，目前看来缺少一些忽略机制。 即使 auth 里已经没有 app.vue ，还是会覆盖路由
 - 把 auth 改成 nuxt4后，app/app.vue 设置为和blog 一致，再加上一个自己的页面 /auth ，blog 项目继承后可以正常使用
-- 
+- 依赖项注意不要放在：devDependencies， 要放在dependencies，不然添加了 install: true，也无法下载 layer 的依赖项。如果后期发现了这个问题，手动改了 package.json，记得重新 pnpm install
 
 
 ## 确认信息
@@ -31,4 +31,6 @@
 ## 相关资料
 
 - [在 Nuxt4 的单体项目中扩展 layers](https://www.youtube.com/watch?v=XGcJiG0fZ8Y)
+- [官方简介 1](https://nuxt.com/docs/getting-started/layers)
+- [官方详细介绍](https://nuxt.com/docs/guide/going-further/layers)
 

@@ -19,4 +19,4 @@
 ## 确认信息
 
 - 在主项目和 layers 都启用 nuxt4 后，app.config.ts可以正常合并
-- 
+- 主项目和 layers 应该具有相同的 app.vue，因为 layers 的优先级更高，会覆盖主项目。（等待新的配置参数出现，如忽略 app.vue 的合并）

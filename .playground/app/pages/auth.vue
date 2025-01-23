@@ -1,6 +1,8 @@
 <template>
   <div>
-    Auth View Component In Playground
+    <AuthView />
+    Playground Auth Page
+    <button @click="navigateTo('/')">back to home</button>
   </div>
 </template>
 <script lang="ts" setup>

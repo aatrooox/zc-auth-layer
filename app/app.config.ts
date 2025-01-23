@@ -1,7 +1,7 @@
 export default defineAppConfig({
   authLayer: {
     name: 'Hello from Auth layer (playground)',
-    enabled: true
+    enabled: true,
   }
 })
 
@@ -9,7 +9,8 @@ declare module '@nuxt/schema' {
   interface AppConfigInput {
     myLayer?: {
       /** Project name */
-      name?: string
+      name?: string,
+      enabled: boolean
     }
   }
 }

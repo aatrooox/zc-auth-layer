@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <NuxtPage></NuxtPage>
-  </div>
+  <NuxtLoadingIndicator color="black" />
+  <NuxtLayout class="bg-grid-dashed">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

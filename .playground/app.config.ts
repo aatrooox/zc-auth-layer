@@ -1,6 +1,6 @@
 export default defineAppConfig({
   authLayer: {
-    name: 'My amazing Auth layer',
+    name: 'Hello from Auth layer (playground)',
     enabled: true
   }
 })

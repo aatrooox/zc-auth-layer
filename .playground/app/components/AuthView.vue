@@ -1,6 +1,6 @@
 <template>
   <div>
-    Auth View Component
+    Auth View Component In Playground
   </div>
 </template>
 <script lang="ts" setup>
